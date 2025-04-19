@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+
+
+<div class="row my-5">
+  <!-- Круглое изображение -->
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="circular-image-container" style=" width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;">
+      <img class="circular-image" src="{% static 'images/rost.jpg' %}" alt="Image" style="width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      ">
+    </div>
+  </div>
+
+  <!-- Приветствие -->
+  <div class="col-12 text-center mt-3">
+    <h4 class="title" style="color:#4fffb0;">A chicken</h4>
+    <div>
+      <h1 class="name" style="color:#ccc;">obsessed</h1>
+      <h1 style="color:turquoise;">with the power of Django!</h1>
+    </div>
+  </div>
+
+  <!-- Социальные иконки -->
+  <div class="col-12 text-center mt-3">
+    <div class="d-flex justify-content-center align-items-center">
+      <a href="https://github.com/Havefunwithme2024" target="_blank" class="ms-3">
+        <img src="{% static 'images/9919.png' %}" alt="github" width="50" height="50" class="social_links" style="overflow:hidden;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        display:flex;
+        justify-content:center;
+        align-items:center;">
+      </a>
+      <a href="https://leetcode.com/u/diorsalimov2006/" target="_blank" class="ms-3">
+        <img src="{% static 'images/leetcode.jpg' %}" alt="github" width="50" height="50" class="social_links" style="overflow:hidden;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        display:flex;
+        justify-content:center;
+        align-items:center;">
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content1 %}
+
